@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: url(Images/bodyBg.jpg) no-repeat fixed;
+}
+
+.bannerDiv{
+    height: 700px;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)), url(Images/banner.jpg) center;
+}
+
+.customTextColor1{
+    color: #ed5b2d;
+}
+
+.customTextColor2{
+    color: #ffce6d;
+}
+
+.boxShadow{
+    box-shadow: 0px 0px 20px #fff;
+}
+
+.transparentBg{
+    background-color: rgba(0,0,0,.5);
+}
+
+.selectedService{
+    background-color: #f8f9fa   ;
+    box-shadow: 0px 0px 20px #fff;
+    width: 100%;
+    color: #ed5b2d;
+    transition: all 0.4s;
+}
+
+.notSelectedService{
+    background-color: rgba(0,0,0,0);
+    width: 90%;
+    color: white;
+    transition: all 0.4s;
+}
+
+.scrollableDiv{
+    max-height: 580px;
+    overflow: auto;
+}
+
+.sectionWhy{
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)), url(Images/banner.jpg) center;
+}
+
+.whyDiv{
+    height: 400px;
+}
+
+@media (max-width: 767px){
+    .whyDiv{
+        height: auto;
+    }
+}
+
+.whyDiv:hover{
+    box-shadow: 0px 0px 20px #fff;
+    transition: all 0.4s;
+}
+
+.featuredDiv:hover{
+    box-shadow: 0px 0px 20px #fff;
+    transition: all 0.4s;
+}
+
+.imgModal{
+    width: 80%;
+    height: 550px;
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    animation-name: popTrans;
+    animation-duration: 1s;
+}
+
+@media (max-width: 767px){
+    .imgModal{
+        width: 95%;
+        height: 400px;
+        position: fixed;
+        top: 20%;
+        left: 2.5%;
+        animation-name: popTransMobile;
+        animation-duration: 1s;
+    }  
+    
+    @keyframes popTransMobile{
+        0%{
+            top: 50%;
+            left: 50%;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+        100%{
+            top: 20%;
+            left: 2.5%;
+            height: 400px;
+            width: 95%;
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes popTrans{
+    0%{
+        top: 50%;
+        left: 50%;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        top: 15%;
+        left: 10%;
+        height: 550px;
+        width: 80%;
+        opacity: 1;
+    }
+}
+
+.footerHr{
+    width: 100%;
+    height: 3px;
+    background-color: #ffce6d;
+    opacity: 1;
+}
+
+.navbar{
+    transition: all .4s;
+}
+
+.navbar-nav li:hover{
+    color: #ed5b2d;
+    transition: all .2s;
+}
+
+.line1, .line2, .line3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+}
+
+.change1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.change2{
+    opacity: 0;
+}
+
+.change3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+#team1{
+    background-image: url(Images/team1.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+}
+
+#team2{
+    background-image: url(Images/team2.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+}
+
+#team3{
+    background-image: url(Images/team3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#team4{
+    background-image: url(Images/team4.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+}
+
+#team5{
+    background-image: url(Images/team5.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+}
+
+#team6{
+    background-image: url(Images/team6.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+}
+
+#input1{
+    color: black;
+}
+.input{
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    transition: all .8s;
+}
+
+.input:focus{
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: black;
+    border-bottom: 2px solid #ed5b2d;
+}
+
+.submit-button{
+    background-color: #ed5b2d;
+    color: black;
+    transition: all .3s;
+}
+
+.submit-button:hover{
+    background: #ccb094;
+    transform: translateY(-3px);
+}
+
+.label{
+    color: #777;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.input:placeholder-shown + .label{
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+}

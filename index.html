@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeCare Solutions</title>
+
+    <link rel="icon" type="image/x-icon" href="Images/logo 2.png">
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/ce5b3333fa.js" crossorigin="anonymous"></script>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- custom stylesheet -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="position-relative">
+    <section class=" d-flex justify-content-center" id="navbarSection">
+        <nav class="col-12 navbar navbar-expand-lg navbar-expand-md nav-menu bg-black justify-content-center" id="navbarMainDiv">
+            <div class="col-lg-9 col-11 d-flex flex-column flex-md-row" id="navbarSubDiv">
+                <div class="col-lg-6 col-md-3 col-12 d-flex justify-content-between">
+                    <img src="Images/logo 1.png" class="col-lg-2 col-md-5 col-3" id="navbarLogo">
+                    <button class="btn d-md-none" type="button" id="menuBtn">
+                        <!-- .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors.
+                            nav-button = custom class for javascript to toggle class -->
+                        <div class="bg-light line1"></div>
+                        <div class="bg-light line2"></div>
+                        <div class="bg-light line3"></div>
+                    </button>
+                </div>
+                <div class="col-lg-6 col-md-9 col-12 d-md-flex justify-content-end d-none" id="menuDiv">
+                    <ul class="navbar-nav fw-bold align-items-center fs-5 text-white">
+                        <li class="nav-item mx-2 py-1 pt-2 text-center py-md-0 customTextColor1" id="homeBtn">Home</li>
+                        <li class="nav-item mx-2 py-1 text-center" id="aboutUsBtn">About Us</li>
+                        <li class="nav-item mx-2 py-1 pb-2 text-center py-md-0" id="contactUsBtn">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="bannerDiv d-flex justify-content-center">
+            <div class="col-md-9 col-11 d-flex flex-column flex-lg-row">
+                <div class="col-12 py-3 d-flex justify-content-center d-lg-none align-items-center">
+                    <img src="Images/bannerImg.jpg" width="100%" class="boxShadow rounded">
+                </div>
+                <div class="col-lg-6 col-12  d-flex justify-content-center align-items-center flex-column">
+                    <p class="fs-5 lh-1 text-white">Welcome to Our Website</p>
+                    <p class="fs-2 fw-bold customTextColor2 text-center">Transforming Houses into Havens</p>
+                    <p class="m-1 text-center text-white">
+                        At HomeCare Solutions, we understand the significance of a well-maintained and comfortable home.
+                        Our mission is to elevate your living space and provide you with top-notch home services that
+                        cater to your every need. With a team of skilled professionals and a commitment to excellence,
+                        we're dedicated to turning your house into a haven you'll love coming back to.
+                    </p>
+                </div>
+                <div class="col-6 p-3 d-lg-flex justify-content-center d-none align-items-center">
+                    <img src="Images/bannerImg.jpg" width="100%" class="boxShadow rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex justify-content-center flex-column align-items-center">
+        <div class="col-12 text-uppercase transparentBg lh-1 d-flex justify-content-center">
+            <div class="col-lg-9 col-12 pt-5 ps-lg-5 lh-1 fw-bold">
+                <p class="fs-2 customTextColor2 text-center text-lg-start">Our Services</p>
+            </div>
+        </div>
+        <div class="col-12 transparentBg lh-1 p-4 d-flex justify-content-center">
+            <div class="col-lg-9 col-12 d-flex">
+                <div class="col-md-4 col-2 d-flex text-uppercase flex-column text-center align-items-center">
+                    <div class="d-flex pt-3 justify-content-center border-bottom border-black align-items-center lh-1 rounded-start selectedService"
+                        id="serviceDiv1">
+                        <p class="fs-5 fw-bold d-none d-md-flex">LuxeLawn Landscaping</p>
+                        <p class="fs-5 fw-bold d-md-none d-flex"><i class="fa-solid fa-hands"></i></p>
+                    </div>
+                    <div class="d-flex pt-3 justify-content-center align-items-center border-bottom border-white lh-1 rounded-start notSelectedService"
+                        id="serviceDiv2">
+                        <p class="fs-5 fw-bold d-none d-md-flex">FlawlessFix Repairs</p>
+                        <p class="fs-5 fw-bold d-md-none d-flex"><i class="fa-solid fa-screwdriver-wrench"></i></p>
+                    </div>
+                    <div class="d-flex pt-3 justify-content-center align-items-center border-bottom border-white lh-1 rounded-start notSelectedService"
+                        id="serviceDiv3">
+                        <p class="fs-5 fw-bold d-none d-md-flex">DreamDécor Design</p>
+                        <p class="fs-5 fw-bold d-md-none d-flex"><i class="fa-solid fa-pen-ruler"></i></p>
+                    </div>
+                    <div class="d-flex pt-3 justify-content-center align-items-center border-bottom border-white lh-1 rounded-start notSelectedService"
+                        id="serviceDiv4">
+                        <p class="fs-5 fw-bold d-none d-md-flex">SparklingSpaces Cleaning</p>
+                        <p class="fs-5 fw-bold d-md-none d-flex"><i class="fa-solid fa-hand-sparkles"></i></p>
+                    </div>
+                    <div class="d-flex pt-3 justify-content-center align-items-center border-bottom border-white lh-1 rounded-start notSelectedService"
+                        id="serviceDiv5">
+                        <p class="fs-5 fw-bold d-none d-md-flex">TotalTech Support</p>
+                        <p class="fs-5 fw-bold d-md-none d-flex"><i class="fa-solid fa-laptop-code"></i></p>
+                    </div>
+                    <div class="d-flex pt-3 justify-content-center align-items-center border-bottom border-white lh-1 rounded-start notSelectedService"
+                        id="serviceDiv6">
+                        <p class="fs-5 fw-bold d-none d-md-flex">CosyClimate Control</p>
+                        <p class="fs-5 fw-bold d-md-none d-flex"><i class="fa-solid fa-mobile-screen-button"></i></p>
+                    </div>
+                    <div class="d-flex pt-3 justify-content-center align-items-center border-bottom border-white lh-1 rounded-start notSelectedService"
+                        id="serviceDiv7">
+                        <p class="fs-5 fw-bold d-none d-md-flex">SafeGuard Security</p>
+                        <p class="fs-5 fw-bold d-md-none d-flex"><i class="fa-solid fa-video"></i></p>
+                    </div>
+                    <div class="d-flex pt-3 justify-content-center align-items-center border-bottom border-white lh-1 rounded-start notSelectedService"
+                        id="serviceDiv8">
+                        <p class="fs-5 fw-bold d-none d-md-flex">QuickFix Handyman</p>
+                        <p class="fs-5 fw-bold d-md-none d-flex"><i class="fa-solid fa-hammer"></i></p>
+                    </div>
+                </div>
+                <div class="col-md-8 col-10 bg-body-tertiary p-lg-5 p-2 rounded-end boxShadow d-flex flex-column"
+                    id="serviceDivContent1">
+                    <img src="Images/service1.jpg" class="shadow rounded" width="100%">
+                    <p class="fs-5 fw-bold mt-3">Service: <span class="customTextColor1">LuxeLawn Landscaping</span></p>
+                    <p class="fs-5 fw-bold">Price: <span class="customTextColor1">150$ - 200$</span></p>
+                    <p class="fs-5 fw-bold">Description</p>
+                    <p>Our expert landscapers will craft a picturesque outdoor environment for your home. From lush
+                        gardens to serene pathways, we'll create a landscape that matches your vision.</p>
+                </div>
+                <div class="col-md-8 col-10 bg-body-tertiary p-lg-5 p-2 rounded-end boxShadow d-none flex-column"
+                    id="serviceDivContent2">
+                    <img src="Images/service2.jpg" class="shadow rounded" width="100%">
+                    <p class="fs-5 fw-bold mt-3">Service: <span class="customTextColor1">FlawlessFix Repairs</span></p>
+                    <p class="fs-5 fw-bold">Price: <span class="customTextColor1">150$ - 200$</span></p>
+                    <p class="fs-5 fw-bold">Description</p>
+                    <p>No more leaky faucets or flickering lights. Our certified technicians are here to tackle any
+                        repair job, big or small, ensuring your home functions seamlessly.</p>
+                </div>
+                <div class="col-md-8 col-10 bg-body-tertiary p-lg-5 p-2 rounded-end boxShadow d-none flex-column"
+                    id="serviceDivContent3">
+                    <img src="Images/service3.jpg" class="shadow rounded" width="100%">
+                    <p class="fs-5 fw-bold mt-3">Service: <span class="customTextColor1">DreamDécor Design</span></p>
+                    <p class="fs-5 fw-bold">Price: <span class="customTextColor1">150$ - 200$</span></p>
+                    <p class="fs-5 fw-bold">Description</p>
+                    <p>Let our interior designers revamp your space. Whether it's a single room or your entire house,
+                        we'll infuse your personal style into every corner, making it both beautiful and functional.</p>
+                </div>
+                <div class="col-md-8 col-10 bg-body-tertiary p-lg-5 p-2 rounded-end boxShadow d-none flex-column"
+                    id="serviceDivContent4">
+                    <img src="Images/service4.jpg" class="shadow rounded" width="100%">
+                    <p class="fs-5 fw-bold mt-3">Service: <span class="customTextColor1">SparklingSpaces Cleaning</span>
+                    </p>
+                    <p class="fs-5 fw-bold">Price: <span class="customTextColor1">150$ - 200$</span></p>
+                    <p class="fs-5 fw-bold">Description</p>
+                    <p>Experience the joy of a spotless home with our meticulous cleaning services. Our trained cleaners
+                        will leave no nook untouched, so you can relax in a pristine environment.</p>
+                </div>
+                <div class="col-md-8 col-10 bg-body-tertiary p-lg-5 p-2 rounded-end boxShadow d-none flex-column"
+                    id="serviceDivContent5">
+                    <img src="Images/service5.jpg" class="shadow rounded" width="100%">
+                    <p class="fs-5 fw-bold mt-3">Service: <span class="customTextColor1">TotalTech Support</span></p>
+                    <p class="fs-5 fw-bold">Price: <span class="customTextColor1">150$ - 200$</span></p>
+                    <p class="fs-5 fw-bold">Description</p>
+                    <p>Home technology made simple. Our tech experts will set up, troubleshoot, and optimize your
+                        gadgets, ensuring they enhance your lifestyle without any hassle.</p>
+                </div>
+                <div class="col-md-8 col-10 bg-body-tertiary p-lg-5 p-2 rounded-end boxShadow d-none flex-column"
+                    id="serviceDivContent6">
+                    <img src="Images/service6.jpg" class="shadow rounded" width="100%">
+                    <p class="fs-5 fw-bold mt-3">Service: <span class="customTextColor1">CosyClimate Control</span></p>
+                    <p class="fs-5 fw-bold">Price: <span class="customTextColor1">150$ - 200$</span></p>
+                    <p class="fs-5 fw-bold">Description</p>
+                    <p>Stay comfortable year-round with our HVAC services. From installation to maintenance, we'll
+                        ensure your home's climate is always just the way you like it.</p>
+                </div>
+                <div class="col-md-8 col-10 bg-body-tertiary p-lg-5 p-2 rounded-end boxShadow d-none flex-column"
+                    id="serviceDivContent7">
+                    <img src="Images/service7.jpg" class="shadow rounded" width="100%">
+                    <p class="fs-5 fw-bold mt-3">Service: <span class="customTextColor1">SafeGuard Security</span></p>
+                    <p class="fs-5 fw-bold">Price: <span class="customTextColor1">150$ - 200$</span></p>
+                    <p class="fs-5 fw-bold">Description</p>
+                    <p>Your safety is our priority. Our security professionals will assess your home and install
+                        state-of-the-art security systems, so you can rest easy knowing your haven is protected.</p>
+                </div>
+                <div class="col-md-8 col-10 bg-body-tertiary p-lg-5 p-2 rounded-end boxShadow d-none flex-column"
+                    id="serviceDivContent8">
+                    <img src="Images/service8.jpg" class="shadow rounded" width="100%">
+                    <p class="fs-5 fw-bold mt-3">Service: <span class="customTextColor1">QuickFix Handyman</span></p>
+                    <p class="fs-5 fw-bold">Price: <span class="customTextColor1">150$ - 200$</span></p>
+                    <p class="fs-5 fw-bold">Description</p>
+                    <p>For those odd jobs you never have time for, our handyman service is here to help. From assembling
+                        furniture to hanging artwork, we've got it covered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex justify-content-center flex-column align-items-center sectionWhy">
+        <div class="col-12 text-uppercase lh-1 d-flex justify-content-center">
+            <div class="col-9 pt-5 ps-lg-5 lh-1 fw-bold">
+                <p class="fs-2 customTextColor2 text-center text-lg-start">Why Choose Us</p>
+            </div>
+        </div>
+        <div class="col-lg-9 col-12 lh-1 d-flex justify-content-center flex-column flex-md-row flex-nowrap flex-md-wrap">
+            <div class="col-md-4 col-12 p-3">
+                <div class="col-12 whyDiv bg-body-tertiary">
+                    <img src="Images/why1.jpg" width="100%">
+                    <p class="fs-5 fw-bold customTextColor1 mx-2 mt-3">Expertise That Matters</p>
+                    <p class="mx-2">At HomeCare Solutions, we pride ourselves on the unmatched expertise of our
+                        dedicated team. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 p-3">
+                <div class="col-12 whyDiv bg-body-tertiary">
+                    <img src="Images/why2.jpg" width="100%">
+                    <p class="fs-5 fw-bold customTextColor1 mx-2 mt-3">Personalized Service, Tailored to You</p>
+                    <p class="mx-2">We understand that every home and homeowner is unique. That's why we don't believe
+                        in a one-size-fits-all approach. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 p-3">
+                <div class="col-12 whyDiv bg-body-tertiary">
+                    <img src="Images/why3.jpg" width="100%">
+                    <p class="fs-5 fw-bold customTextColor1 mx-2 mt-3">Reliability You Can Count On</p>
+                    <p class="mx-2">When you choose HomeCare Solutions, you're choosing reliability you can trust. We
+                        understand the importance of timely and efficient service, and we deliver on that promise. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 p-3">
+                <div class="col-12 whyDiv bg-body-tertiary">
+                    <img src="Images/why4.jpg" width="100%">
+                    <p class="fs-5 fw-bold customTextColor1 mx-2 mt-3">Quality Assurance, Every Step of the Way</p>
+                    <p class="mx-2">Quality is at the heart of everything we do. From the materials we use to the
+                        techniques we employ, our commitment to excellence is unwavering. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 p-3">
+                <div class="col-12 whyDiv bg-body-tertiary">
+                    <img src="Images/why5.jpg" width="100%">
+                    <p class="fs-5 fw-bold customTextColor1 mx-2 mt-3">Convenience Redefined</p>
+                    <p class="mx-2">Juggling various home improvement projects can be overwhelming. That's why we've
+                        made it our mission to simplify your life. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 p-3">
+                <div class="col-12 whyDiv bg-body-tertiary">
+                    <img src="Images/why6.jpg" width="100%">
+                    <p class="fs-5 fw-bold customTextColor1 mx-2 mt-3">Transforming Houses into Havens</p>
+                    <p class="mx-2">At HomeCare Solutions, we're not just in the business of home services; we're in the
+                        business of transforming houses into havens. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex justify-content-center flex-column transparentBg align-items-center">
+        <div class="col-12 text-uppercase lh-1 d-flex justify-content-center">
+            <div class="col-9 pt-5 ps-lg-5 lh-1 fw-bold">
+                <p class="fs-2 customTextColor2 text-center text-lg-start">Featured Projects</p>
+                <p class="text-white text-lowercase text-center text-lg-start">click on images for more details</p>
+            </div>
+        </div>
+        <div class="col-lg-9 col-12 text-uppercase lh-1 d-flex justify-content-center flex-wrap">
+            <div class="col-md-4 col-6 p-3">
+                <div class="col-12 featuredDiv bg-body-tertiary">
+                    <img src="Images/featuredImg1.jpg" width="100%" id="featuredImg1">
+                </div>
+            </div>
+            <div class="col-md-4 col-6 p-3">
+                <div class="col-12 featuredDiv bg-body-tertiary">
+                    <img src="Images/featuredImg2.jpg" width="100%" id="featuredImg2">
+                </div>
+            </div>
+            <div class="col-md-4 col-6 p-3">
+                <div class="col-12 featuredDiv bg-body-tertiary">
+                    <img src="Images/featuredImg3.jpg" width="100%" id="featuredImg3">
+                </div>
+            </div>
+            <div class="col-md-4 col-6 p-3">
+                <div class="col-12 featuredDiv bg-body-tertiary">
+                    <img src="Images/featuredImg4.jpg" width="100%" id="featuredImg4">
+                </div>
+            </div>
+            <div class="col-md-4 col-6 p-3">
+                <div class="col-12 featuredDiv bg-body-tertiary">
+                    <img src="Images/featuredImg5.jpg" width="100%" id="featuredImg5">
+                </div>
+            </div>
+            <div class="col-md-4 col-6 p-3">
+                <div class="col-12 featuredDiv bg-body-tertiary">
+                    <img src="Images/featuredImg6.jpg" width="100%" id="featuredImg6">
+                </div>
+            </div>
+            <div class="col-md-4 col-6 p-3">
+                <div class="col-12 featuredDiv bg-body-tertiary">
+                    <img src="Images/featuredImg7.jpg" width="100%" id="featuredImg7">
+                </div>
+            </div>
+            <div class="col-md-4 col-6 p-3">
+                <div class="col-12 featuredDiv bg-body-tertiary">
+                    <img src="Images/featuredImg8.jpg" width="100%" id="featuredImg8">
+                </div>
+            </div>
+            <div class="col-md-4 col-6 p-3">
+                <div class="col-12 featuredDiv bg-body-tertiary">
+                    <img src="Images/featuredImg9.jpg" width="100%" id="featuredImg9">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-black d-flex justify-content-center flex-column align-items-center">
+            <div class="d-flex flex-row flex-wrap flex-lg-nowrap col-9 text-white pt-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <p class="fs-5 fw-bold customTextColor1">About Us</p>
+                    <p><span><i class="fa-solid fa-address-card customTextColor1"></i></span> ipsum dolor sit amet
+                        consectetur adipisicing elit. Adipisci, a?</p>
+                    <p><span><i class="fa-solid fa-phone customTextColor1"></i> +1800-001-658</span></p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <p class="fs-5 fw-bold customTextColor1">Our services</p>
+                    <p><span><i class="fa-brands fa-servicestack customTextColor1"></i></span> LuxeLawn Landscaping</p>
+                    <p><span><i class="fa-brands fa-servicestack customTextColor1"></i></span> lawlessFix Repairs</p>
+                    <p><span><i class="fa-brands fa-servicestack customTextColor1"></i></span> DreamDécor Design</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <p class="fs-5 fw-bold customTextColor1">Our Showroom</p>
+                    <p><span><i class="fa-solid fa-location-dot customTextColor1"></i></span> Themeforest, Envato HQ 24
+                        Fifth st., Los Angeles, USA</p>
+                    <p><span><i class="fa-solid fa-phone customTextColor1"></i> </span> +1800-001-658</p>
+                    <p><span><i class="fa-solid fa-envelope customTextColor1"></i> </span> Info@Peacefulthemes.Com</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <p class="fs-5 fw-bold customTextColor1">Social</p>
+                    <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                        <div class="d-flex flex-row col-12 rounded my-1" id="twitterDiv">
+                            <div
+                                class="col-3 py-2 rounded-start bg-white d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-twitter text-info fs-4"></i>
+                            </div>
+                            <div class="col-9 ps-2 rounded-end bg-info text-black d-flex align-items-center">Twitter
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row col-12 rounded my-1" id="facebookDiv">
+                            <div
+                                class="col-3 py-2 rounded-start bg-white d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-facebook text-primary fs-4"></i>
+                            </div>
+                            <div class="col-9 ps-2 rounded-end bg-primary text-black d-flex align-items-center">Facebook
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row col-12 rounded my-1" id="youtubeDiv">
+                            <div
+                                class="col-3 py-2 rounded-start bg-white d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-youtube text-danger fs-4"></i>
+                            </div>
+                            <div class="col-9 ps-2 rounded-end bg-danger text-black d-flex align-items-center">Youtube
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 pt-2">
+                <hr class="footerHr">
+                <p class="fs-6 text-center lh-1 text-white"><i class="fa-regular fa-copyright"></i> Copyright 2023
+                    HomeCare Solutions All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="imgModal rounded boxShadow d-none d-flex flex-column justify-content-between">
+        <div class="col-12 p-3 d-flex justify-content-end">
+            <div><button type="button" class="btn btn-danger boxShadow" id="imgModalCloseBtn">close</button></div>
+        </div>
+        <div class="col-12 ps-lg-5 ps-2 d-flex flex-column rounded justify-content-end transparentBg">
+            <p class="fs-4 fw-bold customTextColor2" id="imgHead">Tranquil Garden Retreat</p>
+            <p class="text-white" id="imgBody">Transformed a barren backyard into a lush, serene garden retreat. Installed a meandering stone pathway,
+                vibrant flower beds, and a cozy seating area, creating a peaceful oasis right at home.</p>
+        </div>
+    </div>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
